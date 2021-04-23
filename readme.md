@@ -1,5 +1,5 @@
 # vi: spelllang=de_de
-2. Docker Installation
+2. Docker Installation ([Quelle](https://docs.docker.com/engine/install/debian/))
 
 ```
 apt-get update && apt-get install apt-transport-https ca-certificates curl gnupg lsb-release
@@ -10,7 +10,12 @@ apt-get update && apt-get install docker-ce docker-ce-cli containerd.io
 
 3. starten eines containers mit dem `docker` Kommando
 
-`docker run -it debian /bin/bash`
+Syntax: `docker run <IMAGE>`
+
+Beispiele:
+- `docker run hello-world`
+- `docker run -it debian /bin/bash`
+- `docker run -p 80:80 -v "$PWD"/html:/usr/share/nginx/html:ro nginx`
 
 1. starten mehrerer Container mit docker-compose
 
@@ -18,5 +23,3 @@ apt-get update && apt-get install docker-ce docker-ce-cli containerd.io
 curl -O https://github.com/ljurk/docker-tutorial/docker-compose.yml
 docker-compose up
 ```
-
-2. volumen, ports, environment variablen, reverse proxy
