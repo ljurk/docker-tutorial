@@ -3,8 +3,7 @@
 
 ```
 sudo apt-get update && sudo apt-get install curl
-curl -O https://github.com/ljurk/docker-tutorial/install.sh
-sudo ./install.sh
+curl bash -c "$(curl https://raw.githubusercontent.com/ljurk/docker-tutorial/master/install.sh)"
 ```
 
 2. starten eines containers mit dem `docker` Kommando
@@ -19,7 +18,7 @@ Beispiele:
 3. starten mehrerer Container mit docker-compose
 
 ```
-curl -O https://github.com/ljurk/docker-tutorial/docker-compose.yml
+curl -O https://raw.githubusercontent.com/ljurk/docker-tutorial/master/docker-compose.yml
 docker-compose up
 ```
 
