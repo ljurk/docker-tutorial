@@ -1,5 +1,5 @@
-# vi: spelllang=de_de
-2. Docker Installation ([Quelle](https://docs.docker.com/engine/install/debian/))
+# Docker Tutorial
+1. Docker Installation ([Quelle](https://docs.docker.com/engine/install/debian/))
 
 ```
 apt-get update && apt-get install apt-transport-https ca-certificates curl gnupg lsb-release
@@ -8,7 +8,7 @@ echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] 
 apt-get update && apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
-3. starten eines containers mit dem `docker` Kommando
+2. starten eines containers mit dem `docker` Kommando
 
 Syntax: `docker run <IMAGE>`
 
@@ -17,7 +17,7 @@ Beispiele:
 - `docker run -it debian /bin/bash` (interactive, tty, image, command)
 - `docker run -d -p 80:80 -v "$PWD"/html:/usr/share/nginx/html:ro nginx`(deatached, port, volume, image)
 
-1. starten mehrerer Container mit docker-compose
+3. starten mehrerer Container mit docker-compose
 
 ```
 curl -O https://github.com/ljurk/docker-tutorial/docker-compose.yml
@@ -25,3 +25,5 @@ docker-compose up
 ```
 
 Testen des Reverse Proxies: `curl -H "Host: whoami.local" localhost`
+
+[modeline](vi: spelllang=de_de:)
