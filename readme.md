@@ -26,4 +26,13 @@ docker-compose up
 
 Testen des Reverse Proxies: `curl -H "Host: whoami.local" localhost`
 
-[modeline](vi: spelllang=de_de:)
+4. andere nützliche Befehle
+
+- Auflistung aller laufenden Container: `docker ps`
+- Logs eines Containers einsehen: `docker logs <ID oder NAME>`
+- Stoppen eines Containers: `docker stop <ID oder NAME>`
+    - der Container könnte dannach ohne Datenverlust neugestartet werden: `docker start <ID oder NAME>`
+- Löschen eines Containers: `docker rm <ID oder NAME>`
+
+
+vi: spelllang=de_de
