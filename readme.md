@@ -14,8 +14,8 @@ Syntax: `docker run <IMAGE>`
 
 Beispiele:
 - `docker run hello-world`
-- `docker run -it debian /bin/bash`
-- `docker run -p 80:80 -v "$PWD"/html:/usr/share/nginx/html:ro nginx`
+- `docker run -it debian /bin/bash` (interactive, tty, image, command)
+- `docker run -d -p 80:80 -v "$PWD"/html:/usr/share/nginx/html:ro nginx`(deatached, port, volume, image)
 
 1. starten mehrerer Container mit docker-compose
 
