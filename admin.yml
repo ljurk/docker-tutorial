@@ -1,0 +1,14 @@
+---
+version: '3.2'
+
+services:
+  ui:
+    image: portainer/portainer-ce
+    ports:
+      - 80:9000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+
+volumes:
+  portainer_data:
