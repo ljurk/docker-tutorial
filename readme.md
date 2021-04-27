@@ -23,3 +23,5 @@ Beispiele:
 curl -O https://github.com/ljurk/docker-tutorial/docker-compose.yml
 docker-compose up
 ```
+
+Testen des Reverse Proxies: `curl -H "Host: whoami.local" localhost`
